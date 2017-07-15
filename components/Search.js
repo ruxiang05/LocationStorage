@@ -3,7 +3,7 @@ var React = require('react');
 var Search = React.createClass({
     getInitialState() {
         return { value: ''}
-    }
+    },
 
     handleChange(event) {
         this.setState({value: event.target.value});
