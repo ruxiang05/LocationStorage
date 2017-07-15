@@ -1,8 +1,8 @@
 var React = require('react'),
-    Search = require('../components/Search'),
-    Map = require('../components/Map'),
-    CurrentLocation = require('../components/CurrentLocation'),
-    LocationList = require('../components/LocationList');
+    Search = require('./components/Search'),
+    Map = require('./components/Map'),
+    CurrentLocation = require('./components/CurrentLocation'),
+    LocationList = require('./components/LocationList');
 
 var App = React.createClass({
     getInitialState(){
