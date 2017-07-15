@@ -1,8 +1,8 @@
 var React = require('react'),
-    Search = require('./components/Search'),
-    Map = require('./components/Map'),
-    CurrentLocation = require('./components/CurrentLocation'),
-    LocationList = require('./components/LocationList');
+    Search = require('./Search'),
+    Map = require('./Map'),
+    CurrentLocation = require('./CurrentLocation'),
+    LocationList = require('./LocationList');
 
 var App = React.createClass({
     getInitialState(){
@@ -103,8 +103,8 @@ var App = React.createClass({
         });
     },
 
-    retnder() {
-        reutrn(
+    render() {
+        return(
             <div>
                 <h1>Your Google Maps Locations</h1>
 
