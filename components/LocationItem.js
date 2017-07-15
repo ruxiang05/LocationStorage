@@ -7,7 +7,7 @@ var LocationItem = react.createClass({
     },
 
     render(){
-        let cn = 'list-group-item';
+        var cn = 'list-group-item';
 
         if(this.props.active) {
             cn += 'active-location';

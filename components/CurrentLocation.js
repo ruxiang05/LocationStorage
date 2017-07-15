@@ -7,7 +7,7 @@ var CurrentLocation = React.createClass({
     },
 
     render() {
-        let startClassName = 'glyphicon glyphicon-star-empty';
+        var startClassName = 'glyphicon glyphicon-star-empty';
 
         if(this.props.favorite) {
             startClassName = 'glyphicon glyphicon-star';

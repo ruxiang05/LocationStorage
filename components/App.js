@@ -8,7 +8,7 @@ var App = React.createClass({
     getInitialState(){
         //Extract favorite locations from local storage
 
-        let favorites = [];
+        var favorites = [];
 
         if(localStorage.favorites) {
             favorites = JSON.parse(localStorage.favorites);
@@ -33,7 +33,7 @@ var App = React.createClass({
     },
 
     addToFavorites(address) {
-        let favorites = this.state.favorites;
+        var favorites = this.state.favorites;
 
         favorites.push({
             address: address,
@@ -48,10 +48,10 @@ var App = React.createClass({
     },
 
     removeFromFavorites(address) {
-        let favorites = this.state.favorites,
+        var favorites = this.state.favorites,
         index = -1;
 
-        for(let i = 0; i < favorites.length; i++) {
+        for(var i = 0; i < favorites.length; i++) {
             if(favorites[i].address = address) {
                 index = i;
                 break;
@@ -70,8 +70,8 @@ var App = React.createClass({
     },
 
     isAddressInFavorites(address) {
-        let favorites = this.state.favorites;
-        for(let i = 0; i < favorites.length; i++) {
+        var favorites = this.state.favorites;
+        for(var i = 0; i < favorites.length; i++) {
             if(favorites[i].address == address) {
                 return true;
             }

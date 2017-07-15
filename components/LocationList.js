@@ -4,10 +4,10 @@ var React = require('react'),
 var LocationList = React.createClass({
 
     render() {
-        let self = this;
+        var self = this;
 
-        let locations = this.props.locations.map(function(l) {
-            let active = self.props.activateLocationAddress == l.address;
+        var locations = this.props.locations.map(function(l) {
+            var active = self.props.activateLocationAddress == l.address;
 
             return <LocationItem address={l.address}
                                  timestamp={l.timestamp}
